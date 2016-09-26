@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4924CCBB2BCFBEA763EEC03B'
+               BlueprintIdentifier = '0534E307824C327E9AF38A1D'
                BlueprintName = 'DialogView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DialogView.framework'>

@@ -86,12 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AlertView/DialogView.framework"
   install_framework "Pods-AlertView/OKAlertController.framework"
-  install_framework "Pods-AlertView/PopupDialog.framework"
   install_framework "Pods-AlertView/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AlertView/DialogView.framework"
   install_framework "Pods-AlertView/OKAlertController.framework"
-  install_framework "Pods-AlertView/PopupDialog.framework"
   install_framework "Pods-AlertView/SnapKit.framework"
 fi

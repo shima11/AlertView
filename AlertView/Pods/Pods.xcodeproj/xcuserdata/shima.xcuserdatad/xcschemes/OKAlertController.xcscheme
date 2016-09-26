@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FEAC2DAAAA511B1AB8B0E166'
+               BlueprintIdentifier = '5119467201CB48EE77E31737'
                BlueprintName = 'OKAlertController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'OKAlertController.framework'>

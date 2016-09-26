@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PopupDialog.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>28E283AC88628F837DE1FF87534D1D47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>569EA584A25861C25B1530E234903DEE</key>
 		<dict>
 			<key>primary</key>
@@ -42,17 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1101053F71C4ABA2F1C519B7B05FD29</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C748CE386C4DA59EF36C34ABBB8F8925</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CC98DC17871C2A70710EF4F5E5A62C5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
