@@ -1,0 +1,6 @@
+framework module OKAlertController {
+  umbrella header "OKAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}
