@@ -10,6 +10,7 @@
 		597D83E463476263339D7F2A /* Pods_AlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483F9BDB6C169B6DE3F0911A /* Pods_AlertView.framework */; };
 		D43EAAA01D98E16A00079DBA /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EAA9F1D98E16A00079DBA /* MyAlertView.swift */; };
 		D453351E1D996F1D0043E499 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453351D1D996F1D0043E499 /* SwiftNotice.swift */; };
+		D45335201D9AB9370043E499 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453351F1D9AB9360043E499 /* Shakeable.swift */; };
 		D4E565801D979F2A00978943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5657F1D979F2A00978943 /* AppDelegate.swift */; };
 		D4E565821D979F2A00978943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E565811D979F2A00978943 /* ViewController.swift */; };
 		D4E565851D979F2A00978943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E565831D979F2A00978943 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		BEEE5D719177A4F471624C40 /* Pods-AlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertView/Pods-AlertView.debug.xcconfig"; sourceTree = "<group>"; };
 		D43EAA9F1D98E16A00079DBA /* MyAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		D453351D1D996F1D0043E499 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		D453351F1D9AB9360043E499 /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 		D4E5657C1D979F2A00978943 /* AlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E5657F1D979F2A00978943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E565811D979F2A00978943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D4E5657F1D979F2A00978943 /* AppDelegate.swift */,
+				D453351F1D9AB9360043E499 /* Shakeable.swift */,
 				D4E565811D979F2A00978943 /* ViewController.swift */,
 				D43EAA9F1D98E16A00079DBA /* MyAlertView.swift */,
 				D453351D1D996F1D0043E499 /* SwiftNotice.swift */,
@@ -348,6 +351,7 @@
 				D43EAAA01D98E16A00079DBA /* MyAlertView.swift in Sources */,
 				D4E565801D979F2A00978943 /* AppDelegate.swift in Sources */,
 				D453351E1D996F1D0043E499 /* SwiftNotice.swift in Sources */,
+				D45335201D9AB9370043E499 /* Shakeable.swift in Sources */,
 				D4E565AE1D97A46800978943 /* MyAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
