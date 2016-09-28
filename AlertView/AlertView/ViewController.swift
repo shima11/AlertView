@@ -12,9 +12,10 @@ extension UITextField: Shakeable {}
 
 class ViewController: UIViewController {
 
-    let maxTextLenge: Int = 6
+    let maxTextLenge: Int = 6 // 最大入力文字数
     
     var alertViewController: UIAlertController?
+    let defaultMessage = "default message"
     
     
     override func viewDidLoad() {
@@ -47,10 +48,18 @@ class ViewController: UIViewController {
     func showAlert() {
         // alertviewcontroller作成
         alertViewController = UIAlertController(title: "Alert",
-                                          message: "message",
+                                          message: defaultMessage,
                                           preferredStyle: .Alert)
         alertViewController!.view.backgroundColor = UIColor.redColor()
-        // action 作成
+        
+        addAlertAction()
+        addTextField()
+        
+        // alertviewcontrollerを画面に表示
+        presentViewController(alertViewController!, animated: true, completion: nil)
+    }
+    
+    func addAlertAction() {
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel",
                                                         style: UIAlertActionStyle.Cancel,
                                                         handler: {(action:UIAlertAction!) -> Void in
@@ -68,18 +77,19 @@ class ViewController: UIViewController {
                                                             }
         })
         //defaultAction.enabled = false
+        let destructiveAction: UIAlertAction = UIAlertAction(title: "Destructive",
+                                                             style: UIAlertActionStyle.Destructive,
+                                                             handler: {(action: UIAlertAction!) -> Void in
+                                                                print("Destructive")
+        })
         
-//        let destructiveAction: UIAlertAction = UIAlertAction(title: "Destructive",
-//                                                             style: UIAlertActionStyle.Destructive,
-//                                                             handler: {(action: UIAlertAction!) -> Void in
-//                                                                print("Destructive")
-//        })
-        
-        // actionをalertviewcontrollerに追加
+         // actionをalertviewcontrollerに追加
         alertViewController!.addAction(cancelAction)
         alertViewController!.addAction(defaultAction)
-        //alertViewController.addAction(destructiveAction)
-        
+        alertViewController!.addAction(destructiveAction)
+    }
+    
+    func addTextField() {
         // textfieldをalertviewcontrollerに追加
         alertViewController!.addTextFieldWithConfigurationHandler({(textField: UITextField) -> Void in
             textField.placeholder = "user id"
@@ -87,17 +97,15 @@ class ViewController: UIViewController {
             textField.delegate = self
             textField.clearButtonMode = UITextFieldViewMode.WhileEditing // 編集中のみクリアボタンを表示
             // notification centerに登録
-//            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.changeTextFieldText), name: UITextFieldTextDidChangeNotification, object: nil)
+            //            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.changeTextFieldText), name: UITextFieldTextDidChangeNotification, object: nil)
         })
         alertViewController!.addTextFieldWithConfigurationHandler({(textField: UITextField) -> Void in
             textField.placeholder = "password"
+            textField.keyboardType = .Default
             textField.secureTextEntry = true
+            textField.clearButtonMode = UITextFieldViewMode.WhileEditing
         })
-        
-        // alertviewcontrollerを画面に表示
-        presentViewController(alertViewController!, animated: true, completion: nil)
     }
-    
     // textfieldの値が変化した時に呼ばれる (NSNotificationCenter UITextField)
     func changeTextFieldText(sender: NSNotification) {
         let textField = sender.object as! UITextField
@@ -153,10 +161,12 @@ extension ViewController: UITextFieldDelegate {
         // 入力文字数を制限
         let text = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
         if text.characters.count > maxTextLenge {
-            print("入力文字数を超えています")
+            self.alertViewController!.message = defaultMessage + "\n入力文字数を超えています"
             // view shakable (ブルブルさせるアニメーション)
             textField.shake()
             return false
+        } else {
+            self.alertViewController!.message = self.defaultMessage
         }
         
         // defaultボタンをtextfieldに文字が入力されるとタップ可能にする
