@@ -1,16 +1,3 @@
-PODS:
-  - DialogView (0.1.3):
-    - SnapKit (~> 0.20.0)
-  - OKAlertController (1.1.0)
-  - SnapKit (0.20.0)
+PODFILE CHECKSUM: c08d03ae4d78cee5afa6cce1e10f00b4d51b3fb7
 
-DEPENDENCIES:
-  - DialogView
-  - OKAlertController
-
-SPEC CHECKSUMS:
-  DialogView: 0918b849d3bf28a80f418209f327f394c2d3e8a5
-  OKAlertController: e1a51f8dbab0b6f84efb45fc35378ab30b5ce80d
-  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
-
-COCOAPODS: 0.39.0
+COCOAPODS: 1.2.0.beta.1

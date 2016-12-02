@@ -4,22 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DialogView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>OKAlertController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-AlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SnapKit.xcscheme</key>
+		<key>Pods-AlertViewTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AlertViewUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28E283AC88628F837DE1FF87534D1D47</key>
+		<key>59638862B26626E3460CA895492DF0A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>569EA584A25861C25B1530E234903DEE</key>
+		<key>657F60356719EE875978EB57DDAEF609</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77DC39C470299D833C4E26CF016AFF99</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C748CE386C4DA59EF36C34ABBB8F8925</key>
+		<key>C96E05CB6F007DB1A2EDF93EC244E710</key>
 		<dict>
 			<key>primary</key>
 			<true/>

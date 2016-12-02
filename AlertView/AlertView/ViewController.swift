@@ -50,8 +50,7 @@ class ViewController: UIViewController {
         alertViewController = UIAlertController(title: "Alert",
                                           message: defaultMessage,
                                           preferredStyle: .Alert)
-        alertViewController!.view.backgroundColor = UIColor.redColor()
-        
+//        alertViewController!.view.backgroundColor = UIColor.redColor()
         addAlertAction()
         addTextField()
         
@@ -77,16 +76,16 @@ class ViewController: UIViewController {
                                                             }
         })
         //defaultAction.enabled = false
-        let destructiveAction: UIAlertAction = UIAlertAction(title: "Destructive",
-                                                             style: UIAlertActionStyle.Destructive,
-                                                             handler: {(action: UIAlertAction!) -> Void in
-                                                                print("Destructive")
-        })
+//        let destructiveAction: UIAlertAction = UIAlertAction(title: "Destructive",
+//                                                             style: UIAlertActionStyle.Destructive,
+//                                                             handler: {(action: UIAlertAction!) -> Void in
+//                                                                print("Destructive")
+//        })
         
          // actionをalertviewcontrollerに追加
         alertViewController!.addAction(cancelAction)
         alertViewController!.addAction(defaultAction)
-        alertViewController!.addAction(destructiveAction)
+//        alertViewController!.addAction(destructiveAction)
     }
     
     func addTextField() {

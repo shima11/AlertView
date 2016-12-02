@@ -1,12 +1,12 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
+platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
 target 'AlertView' do
 #  pod 'PopupDialog'
-  pod "OKAlertController"
-  pod "DialogView"
+#  pod "OKAlertController"
+#  pod "DialogView"
 end
 
 target 'AlertViewTests' do
